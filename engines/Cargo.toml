@@ -1,0 +1,13 @@
+[package]
+name = "engines"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+
+domain-core = { path = "../domain-core" }
+storage = { path = "../storage" }
