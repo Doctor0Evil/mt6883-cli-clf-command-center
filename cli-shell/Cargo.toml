@@ -1,0 +1,10 @@
+[package]
+name = "cli-shell"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cli-core = { path = "../cli-core" }
+crossterm = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+serde_json = { workspace = true }
