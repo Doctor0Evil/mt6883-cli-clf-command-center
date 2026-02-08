@@ -1,0 +1,20 @@
+[package]
+name = "cli-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { workspace = true, features = ["derive"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+once_cell = { workspace = true }
+parking_lot = { workspace = true }
+uuid = { workspace = true }
+
+domain-core = { path = "../domain-core" }
+engines = { path = "../engines" }
+security = { path = "../security" }
+storage = { path = "../storage" }
+integrator-api = { path = "../integrator-api" }
+telephony = { path = "../telephony" }
